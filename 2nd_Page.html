@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Album</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="./secretfile/song.mp3" type="audio/mp3">
+      </audio>
+
+    <div class="nav">
+        <h1>Our Memories</h1>
+    </div>
+  
+  <div class="album-container">
+    <!-- Thumbnails -->
+    <div class="photo-thumbnails">
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1B6ZJ3Egwpnz3gHQ0yguI6xV8oVXAdrOU&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1B6ZJ3Egwpnz3gHQ0yguI6xV8oVXAdrOU&sz=w1000" alt="Photo 1">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1WTCzNRbP2qcVNFXj6cZ22K4hGQE-Aqhh&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1WTCzNRbP2qcVNFXj6cZ22K4hGQE-Aqhh&sz=w1000" alt="Photo 2">
+      </div>
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1rWnZ0NoKBt6PSA2MmD0HZBNEvGHAZKUI&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1rWnZ0NoKBt6PSA2MmD0HZBNEvGHAZKUI&sz=w1000" alt="Photo 3">
+      </div>
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1xJCyVZu_uFNzByIf_Sq8xOuS1nsK6P7V&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1xJCyVZu_uFNzByIf_Sq8xOuS1nsK6P7V&sz=w1000" alt="Photo 1">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1XHiuVFAHy8k-3CH0PGNdPYVVobb0yuBE&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1XHiuVFAHy8k-3CH0PGNdPYVVobb0yuBE&sz=w1000" alt="Photo 2">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1_N9LpZ2Vt8nh51Xsev-ONEX2FFhdAHno&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1_N9LpZ2Vt8nh51Xsev-ONEX2FFhdAHno&sz=w1000" alt="Photo 3">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1_Pb9Ow6bKUVCi4P-8_yA5dA13l-_JFes&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1_Pb9Ow6bKUVCi4P-8_yA5dA13l-_JFes&sz=w1000" alt="Photo 4">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1fU-Q__9t98_UTTFqa-5Bj2Vac830_6RA&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1fU-Q__9t98_UTTFqa-5Bj2Vac830_6RA&sz=w1000" alt="Photo 5">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1y3XzdmB1WV8DXsZN-yVVHZrnLzVUzzXw&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1y3XzdmB1WV8DXsZN-yVVHZrnLzVUzzXw&sz=w1000" alt="Photo 6">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1H7ywVkvv5tl4rj4uCEXycJf7mk3cY88T&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1H7ywVkvv5tl4rj4uCEXycJf7mk3cY88T&sz=w1000" alt="Photo 7">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=17pxBNfviJu2NF-uBaXG6Pr0T9KXBeWGP&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=17pxBNfviJu2NF-uBaXG6Pr0T9KXBeWGP&sz=w1000" alt="Photo 8">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=16viiLzKgGaH7pf5d2VImlnIa8z-GL2xF&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=16viiLzKgGaH7pf5d2VImlnIa8z-GL2xF&sz=w1000" alt="Photo 9">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1wQI4caKR-zlnj4haM5o_2CjfPGde8IiO&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1wQI4caKR-zlnj4haM5o_2CjfPGde8IiO&sz=w1000" alt="Photo 10">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1SBNLDFYusJSj55YZpUr6TvC_6sSr2mp3&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1SBNLDFYusJSj55YZpUr6TvC_6sSr2mp3&sz=w1000" alt="Photo 11">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1F7kElqGudJR43fPCNEQR08OyDg99fbTH&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1F7kElqGudJR43fPCNEQR08OyDg99fbTH&sz=w1000" alt="Photo 12">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=16yq4dEixu2SwBk2mZv9MoS1XV4DVIwe7&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=16yq4dEixu2SwBk2mZv9MoS1XV4DVIwe7&sz=w1000" alt="Photo 13">
+      </div>
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1sCcz2KyArbrqqBFVxzKAVTj9j_em-D6c&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1sCcz2KyArbrqqBFVxzKAVTj9j_em-D6c&sz=w1000" alt="Photo 1">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1sHIXWmrHrSD2sDJHh1e5-_djbqC6xY3L&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1sHIXWmrHrSD2sDJHh1e5-_djbqC6xY3L&sz=w1000" alt="Photo 2">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1vqNympVKA_T8ggCsK5BBvBwGBhT4PLtb&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1vqNympVKA_T8ggCsK5BBvBwGBhT4PLtb&sz=w1000" alt="Photo 3">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1RrNAuvoCeI_XV546A8phb6C6uIBKk7P7&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1RrNAuvoCeI_XV546A8phb6C6uIBKk7P7&sz=w1000" alt="Photo 4">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1M3ZJpi9jVD4dSrxaAeyn0rGU-bIwSRMj&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1M3ZJpi9jVD4dSrxaAeyn0rGU-bIwSRMj&sz=w1000" alt="Photo 5">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1AH4v7hdPQo4G1yYGY-J7sfsXSYYO1GDi&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1AH4v7hdPQo4G1yYGY-J7sfsXSYYO1GDi&sz=w1000" alt="Photo 6">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1MgIr3SuoqHO1EQkhlq6jom1pFCOzZmdR&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1MgIr3SuoqHO1EQkhlq6jom1pFCOzZmdR&sz=w1000" alt="Photo 7">
+      </div>
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1uf2tDBpM-j_sMLO1YAP_NZ_pWDZIy1Aq&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1uf2tDBpM-j_sMLO1YAP_NZ_pWDZIy1Aq&sz=w1000" alt="Photo 1">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1dO42az7xf-grS_DTP1R7-jUcEZqfkvqY&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1dO42az7xf-grS_DTP1R7-jUcEZqfkvqY&sz=w1000" alt="Photo 2">
+      </div>
+      
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1H1SPYH9ULbQZVqvP329tF3p9oi-f1fGB&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1H1SPYH9ULbQZVqvP329tF3p9oi-f1fGB&sz=w1000" alt="Photo 3">
+      </div>
+      <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=12oyIYX-shIYmle3z9TVwjb-T7DUxb4H2&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=12oyIYX-shIYmle3z9TVwjb-T7DUxb4H2&sz=w1000" alt="Image 1">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1IpnArOfmIIvBPKGAHn8blcjQ80BAzgsY&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1IpnArOfmIIvBPKGAHn8blcjQ80BAzgsY&sz=w1000" alt="Image 2">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1_ww4q_ZoQcDZU2bM_kMS8uteZGt0ISTd&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1_ww4q_ZoQcDZU2bM_kMS8uteZGt0ISTd&sz=w1000" alt="Image 3">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1Tz20W7ZW5NYWVvSKjnBZyisFeSlyq3Xp&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1Tz20W7ZW5NYWVvSKjnBZyisFeSlyq3Xp&sz=w1000" alt="Image 4">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1TicP4XpQrcjEqGBFVc0YLTnvJzYKfRnG&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1TicP4XpQrcjEqGBFVc0YLTnvJzYKfRnG&sz=w1000" alt="Image 5">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=17FM3cUaIbi_lZh4YBQszhuKLrNNlnVV4&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=17FM3cUaIbi_lZh4YBQszhuKLrNNlnVV4&sz=w1000" alt="Image 6">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1H7ywVkvv5tl4rj4uCEXycJf7mk3cY88T&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1H7ywVkvv5tl4rj4uCEXycJf7mk3cY88T&sz=w1000" alt="Image 7">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1bXb68ApyhgMcGKDVQCB-kfRIf4UflHMD&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1bXb68ApyhgMcGKDVQCB-kfRIf4UflHMD&sz=w1000" alt="Image 8">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1zbWOpVZ_opIxV4JiD3DQdAqs3rvLmb6M&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1zbWOpVZ_opIxV4JiD3DQdAqs3rvLmb6M&sz=w1000" alt="Image 9">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=17pxBNfviJu2NF-uBaXG6Pr0T9KXBeWGP&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=17pxBNfviJu2NF-uBaXG6Pr0T9KXBeWGP&sz=w1000" alt="Image 10">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=16viiLzKgGaH7pf5d2VImlnIa8z-GL2xF&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=16viiLzKgGaH7pf5d2VImlnIa8z-GL2xF&sz=w1000" alt="Image 11">
+    </div>
+    
+    <div class="thumbnail" onclick="openImage('https://drive.google.com/thumbnail?id=1iK3Z-2Nnggh3Kx-tmJJp11PykK8c-otv&sz=w1000')">
+        <img src="https://drive.google.com/thumbnail?id=1iK3Z-2Nnggh3Kx-tmJJp11PykK8c-otv&sz=w1000" alt="Image 12">
+    </div>
+    
+    <!-- Continue the same structure for the remaining images -->
+    
+    </div>
+
+    <!-- Modal for displaying full-size image -->
+    <div id="imageModal" class="modal">
+        <img id="modalImage" class="modal-content" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

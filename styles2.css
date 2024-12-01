@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1A1A1D;
+}
+  
+ /* Ensure enough height for album container */
+.album-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin: 1rem;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Nav Bar */
+.nav {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #A888B5, #6A4C9C); /* Gradient background for a smoother look */
+    width: 100%;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    color: #fff; /* White text color for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+.nav:hover {
+    background: linear-gradient(135deg, #6A4C9C, #A888B5); /* Invert gradient on hover */
+    transform: translateY(-5px); /* Slightly lift the bar for effect */
+}
+
+/* Thumbnails */
+.photo-thumbnails {
+    columns: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Thumbnail Styling */
+.thumbnail {
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.03);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Ensure modal is hidden by default */
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in/out */
+}
+
+.modal-content {
+    max-width: 90%; /* Max width of the image */
+    max-height: 90%; /* Max height of the image */
+    object-fit: contain; /* Ensures image maintains aspect ratio */
+    transition: transform 0.5s ease;
+}
+
+#caption {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        font-size: 1rem;
+    }
+}
